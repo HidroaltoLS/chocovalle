@@ -100,7 +100,7 @@ img {
 .hero {
     position: relative;
     color: #fff;
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -139,12 +139,17 @@ img {
 }
 
 .hero--sub {
-    min-height: 60vh;
+    min-height: 65vh;
 }
 
 .hero__content {
-    margin: 0 5vw 10vh;
-    max-width: 42rem;
+    margin: 0 auto 10vh;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
 }
 
 .hero__content h1 {
@@ -157,7 +162,7 @@ img {
 .hero__content p {
     font-size: 1.1rem;
     max-width: 36rem;
-    margin-top: 1rem;
+    margin: 0 auto;
 }
 
 .hero__actions {
@@ -165,6 +170,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center;
 }
 
 .button {
@@ -230,12 +236,14 @@ img {
     color: var(--color-chocolate);
     margin-bottom: 1.5rem;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 
 .content-section__text p,
 .content-section__wrapper p {
     margin-bottom: 1.2rem;
     font-size: 1.05rem;
+    text-align: justify;
 }
 
 .link-cta {
@@ -245,6 +253,7 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
+    margin: 0 auto;
 }
 
 .link-cta::after {
@@ -314,16 +323,27 @@ img {
     color: var(--color-forest);
     font-size: 1.7rem;
     margin-bottom: 0.8rem;
+    text-align: center;
 }
 
 .feature-card p,
 .product-card p,
 .people-grid p,
+.timeline li p,
 .contact-card p,
 .contact-form label,
 .contact-form p {
     font-size: 1rem;
     line-height: 1.6;
+}
+
+.feature-card p,
+.product-card p,
+.people-grid p,
+.timeline li p,
+.contact-card p,
+.contact-form p {
+    text-align: justify;
 }
 
 .product-card__detail {
@@ -351,6 +371,7 @@ img {
     color: var(--color-forest);
     display: block;
     margin-bottom: 0.4rem;
+    text-align: center;
 }
 
 .timeline--columns {
@@ -463,6 +484,12 @@ img {
     font-size: 0.95rem;
     margin-top: 1rem;
     opacity: 0.8;
+}
+
+.footer__signature {
+    font-family: var(--font-heading);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
