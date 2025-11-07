@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChocoValle | Contáctanos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero hero--sub hero--contacto">
+        <nav class="nav">
+            <a class="logo" href="index.html">ChocoValle</a>
+            <button class="nav__toggle" aria-expanded="false" aria-label="Abrir menú">☰</button>
+            <ul class="nav__links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotras</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a class="active" href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <div class="hero__content">
+            <h1>Contacto directo</h1>
+            <p>Haz tus pedidos de tabletas y bombones artesanales o solicita cotizaciones personalizadas.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <div class="content-section__wrapper content-section__wrapper--grid">
+                <div class="contact-card">
+                    <h2>Haz tu pedido</h2>
+                    <p><strong>WhatsApp:</strong> 099 087 5632 / 099 401 0773</p>
+                    <p><strong>Teléfono:</strong> 099 087 5632</p>
+                    <p><strong>Correo:</strong> lamontanita.aso@gmail.com</p>
+                    <div class="contact-card__divider"></div>
+                    <p>Pedimos 72 horas de anticipación para pedidos mayores a 6 unidades.</p>
+                    <p>Envíos a nivel nacional con embalaje seguro para chocolate.</p>
+                </div>
+
+                <div class="contact-card">
+                    <h2>Redes sociales</h2>
+                    <ul class="contact-list">
+                        <li><a href="https://www.instagram.com/Chocovalle.ecuador" target="_blank" rel="noreferrer">Instagram @Chocovalle.ecuador</a></li>
+                        <li><a href="https://www.facebook.com/Chocovalle.ecuador" target="_blank" rel="noreferrer">Facebook @Chocovalle.ecuador</a></li>
+                    </ul>
+                    <p>Síguenos para conocer lanzamientos, degustaciones y promociones especiales.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__brand">
+            <a class="logo" href="index.html">ChocoValle</a>
+            <p>Chocolate artesanal creado por mujeres de La Mana, Cotopaxi.</p>
+        </div>
+        <div>
+            <h2>Síguenos</h2>
+            <ul class="footer__social">
+                <li><a href="https://www.instagram.com/Chocovalle.ecuador" target="_blank" rel="noreferrer">Instagram @Chocovalle.ecuador</a></li>
+                <li><a href="https://www.facebook.com/Chocovalle.ecuador" target="_blank" rel="noreferrer">Facebook @Chocovalle.ecuador</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Contacto directo</h2>
+            <p><strong>Correo:</strong> lamontanita.aso@gmail.com</p>
+            <p><strong>WhatsApp:</strong> 099 087 5632 / 099 401 0773</p>
+        </div>
+        <p class="footer__note">Chocolate que honra la tierra y a las mujeres que la cultivan — <span class="footer__signature">LS Studios</span></p>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.nav__toggle');
+        const navLinks = document.querySelector('.nav__links');
+        if (toggle && navLinks) {
+            toggle.addEventListener('click', () => {
+                const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+                toggle.setAttribute('aria-expanded', String(!isExpanded));
+                navLinks.classList.toggle('nav__links--open');
+            });
+            navLinks.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => {
+                    toggle.setAttribute('aria-expanded', 'false');
+                    navLinks.classList.remove('nav__links--open');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
