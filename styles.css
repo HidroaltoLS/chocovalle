@@ -103,7 +103,7 @@ img {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -143,13 +143,17 @@ img {
 }
 
 .hero__content {
-    margin: 0 auto 10vh;
+    flex: 1;
+    margin: 0 auto;
     max-width: 40rem;
+    width: min(100%, 40rem);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
     text-align: center;
+    padding: clamp(3rem, 12vh, 6rem) 5vw clamp(4rem, 12vh, 8rem);
 }
 
 .hero__content h1 {
@@ -268,6 +272,7 @@ img {
 
 .media-card {
     min-height: 18rem;
+    aspect-ratio: 16 / 9;
     border-radius: 1.5rem;
     box-shadow: 0 20px 40px rgba(43, 24, 18, 0.15);
     background-size: cover;
