@@ -682,6 +682,15 @@ img {
     max-width: 24rem;
 }
 
+.footer__group a {
+    font-weight: 600;
+}
+
+.footer__group a:hover,
+.footer__group a:focus-visible {
+    text-decoration: underline;
+}
+
 .footer__social {
     list-style: none;
     display: grid;
