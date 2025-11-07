@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChocoValle | Contáctanos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero hero--sub hero--contacto">
+        <nav class="nav">
+            <a class="logo" href="index.html">ChocoValle</a>
+            <button class="nav__toggle" aria-expanded="false" aria-label="Abrir menú">☰</button>
+            <ul class="nav__links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotras</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a class="active" href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <div class="hero__content">
+            <h1>Hablemos de cacao</h1>
+            <p>Cuéntanos sobre tu proyecto, cafetería o iniciativa comunitaria. Estamos listas para crear contigo.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <div class="content-section__wrapper content-section__wrapper--grid">
+                <div class="contact-card">
+                    <h2>Visítanos</h2>
+                    <p>Centro comunitario Mujeres de La Mana</p>
+                    <p>Vía principal a Pucayacu, km 12</p>
+                    <p>La Mana, Cotopaxi - Ecuador</p>
+                    <div class="contact-card__divider"></div>
+                    <h3>Horarios de atención</h3>
+                    <p>Lunes a sábado, 9h00 a 17h00</p>
+                    <p>Visitas guiadas y catas con reserva previa.</p>
+                </div>
+
+                <form class="contact-form" aria-labelledby="contacto-formulario">
+                    <h2 id="contacto-formulario">Escríbenos</h2>
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Tu nombre" required>
+
+                    <label for="email">Correo electrónico</label>
+                    <input id="email" type="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos cómo podemos apoyarte" required></textarea>
+
+                    <button class="button" type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="content-section content-section--highlight">
+            <div class="content-section__text">
+                <h2>Más canales</h2>
+                <ul class="contact-list">
+                    <li><strong>Teléfono:</strong> +593 98 765 4321</li>
+                    <li><strong>Correo:</strong> hola@chocovalle.org</li>
+                    <li><strong>WhatsApp:</strong> +593 96 555 1212</li>
+                </ul>
+                <p>Respondemos en menos de 24 horas y agendamos videollamadas para coordinar proyectos especiales.</p>
+            </div>
+            <div class="content-section__media" aria-hidden="true">
+                <div class="media-card media-card--contact"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__brand">
+            <a class="logo" href="index.html">ChocoValle</a>
+            <p>Chocolate artesanal creado por mujeres de La Mana, Cotopaxi.</p>
+        </div>
+        <div>
+            <h2>Síguenos</h2>
+            <ul class="footer__social">
+                <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a></li>
+                <li><a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Contacto directo</h2>
+            <p><strong>Correo:</strong> hola@chocovalle.org</p>
+            <p><strong>Teléfono:</strong> +593 98 765 4321</p>
+        </div>
+        <p class="footer__note">Chocolate que honra la tierra y a las mujeres que la cultivan — <span class="footer__signature">LS Studios</span></p>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.nav__toggle');
+        const navLinks = document.querySelector('.nav__links');
+        if (toggle && navLinks) {
+            toggle.addEventListener('click', () => {
+                const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+                toggle.setAttribute('aria-expanded', String(!isExpanded));
+                navLinks.classList.toggle('nav__links--open');
+            });
+            navLinks.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => {
+                    toggle.setAttribute('aria-expanded', 'false');
+                    navLinks.classList.remove('nav__links--open');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
