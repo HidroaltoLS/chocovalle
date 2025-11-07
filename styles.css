@@ -100,7 +100,7 @@ img {
 .hero {
     position: relative;
     color: #fff;
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -139,7 +139,7 @@ img {
 }
 
 .hero--sub {
-    min-height: 60vh;
+    min-height: 65vh;
 }
 
 .hero__content {
@@ -484,6 +484,12 @@ img {
     font-size: 0.95rem;
     margin-top: 1rem;
     opacity: 0.8;
+}
+
+.footer__signature {
+    font-family: var(--font-heading);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
