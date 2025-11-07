@@ -250,6 +250,23 @@ img {
     text-align: justify;
 }
 
+.home-focus .content-section__text h2 {
+    text-align: left;
+}
+
+.home-focus .content-section__text p {
+    text-align: left;
+}
+
+.home-focus .highlight-list__title,
+.home-focus .highlight-list__detail {
+    text-align: left;
+}
+
+.home-focus .link-cta {
+    margin: 1.5rem 0 0;
+}
+
 .link-cta {
     font-weight: 700;
     letter-spacing: 0.04em;
