@@ -8,90 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* === Ajustes solicitados === */
-
-        /* 1) “Bombones y tabletas listas…”: alineado a la izquierda + párrafos justificados */
-        .home-focus .content-section__text { text-align: left; }
-        .home-focus .content-section__text p {
-            text-align: justify;
-            text-justify: inter-word;
-            hyphens: auto;
-        }
-        .highlight-list__title,
-        .highlight-list__detail { display: block; text-align: left; }
-
-        /* 2) Colecciones principales: cuadrícula más grande, aire y texto simétrico */
-        .category-grid{
-            display: grid;
-            grid-template-columns: repeat(2, minmax(260px, 1fr));
-            gap: 2rem;
-            align-items: stretch;
-            justify-items: stretch;
-        }
-        .product-card{
-            border-radius: 14px;
-            padding: 1.25rem 1.5rem;
-            box-shadow: 0 8px 24px rgba(0,0,0,.08);
-            background: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            text-align: left;
-        }
-        .product-card h3{ margin: 0 0 .5rem; }
-        .product-card p{
-            margin: 0 0 .75rem;
-            text-align: justify;
-            hyphens: auto;
-        }
-        .product-card__detail{
-            display: block;
-            margin-top: auto;
-            opacity: .85;
-        }
-
-        /* Desktop: cuadrícula 2x2 centrada y cards cuadradas */
-        @media (min-width: 900px){
-            .category-grid{
-                grid-template-columns: repeat(2, minmax(320px, 1fr));
-                max-width: 960px;
-                margin-inline: auto;
-            }
-            .product-card{ aspect-ratio: 1 / 1; }
-        }
-
-        /* 3) “Coordina tu pedido”: más espacio arriba */
-        .content-section--accent .link-cta{
-            display: inline-block;
-            margin-top: 1.75rem;
-        }
-
-        /* 4) Más respiración entre secciones */
-        .content-section{ padding-block: 3.5rem; }
-        .content-section + .content-section{ margin-top: 1rem; }
-
-        /* 5) Footer: separación simétrica */
-        .footer{
-            padding: 3rem 1rem;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-        }
-        @media (min-width: 900px){
-            .footer{
-                grid-template-columns: 1.2fr 1fr 1fr;
-                align-items: start;
-                gap: 2rem;
-            }
-        }
-        .footer__note{
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid rgba(0,0,0,.12);
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <header class="hero hero--home">
@@ -204,21 +120,23 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__brand">
-            <a class="logo" href="index.html">ChocoValle</a>
-            <p>Chocolate artesanal creado por mujeres de La Mana, Cotopaxi.</p>
-        </div>
-        <div>
-            <h2>Síguenos</h2>
-            <ul class="footer__social">
-                <li><a href="https://www.instagram.com/Chocovalle.ecuador" target="_blank" rel="noreferrer">Instagram @Chocovalle.ecuador</a></li>
-                <li><a href="https://www.facebook.com/Chocovalle.ecuador" target="_blank" rel="noreferrer">Facebook @Chocovalle.ecuador</a></li>
-            </ul>
-        </div>
-        <div>
-            <h2>Contacto directo</h2>
-            <p><strong>Correo:</strong> lamontanita.aso@gmail.com</p>
-            <p><strong>WhatsApp:</strong> 099 087 5632 / 099 401 0773</p>
+        <div class="footer__content">
+            <div class="footer__brand">
+                <a class="logo" href="index.html">ChocoValle</a>
+                <p>Chocolate artesanal creado por mujeres de La Mana, Cotopaxi.</p>
+            </div>
+            <div class="footer__group footer__contact">
+                <h2>Contacto directo</h2>
+                <p><strong>Correo:</strong> lamontanita.aso@gmail.com</p>
+                <p><strong>WhatsApp:</strong> 099 087 5632 / 099 401 0773</p>
+            </div>
+            <div class="footer__group">
+                <h2>Síguenos</h2>
+                <ul class="footer__social">
+                    <li><a href="https://www.instagram.com/Chocovalle.ecuador" target="_blank" rel="noreferrer">Instagram @Chocovalle.ecuador</a></li>
+                    <li><a href="https://www.facebook.com/Chocovalle.ecuador" target="_blank" rel="noreferrer">Facebook @Chocovalle.ecuador</a></li>
+                </ul>
+            </div>
         </div>
         <p class="footer__note">Chocolate que honra la tierra y a las mujeres que la cultivan — <span class="footer__signature">LS Studios</span></p>
     </footer>
