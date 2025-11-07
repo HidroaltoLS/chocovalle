@@ -308,6 +308,10 @@ img {
     margin-top: 2rem;
 }
 
+.category-grid {
+    margin-top: 3rem;
+}
+
 .feature-card,
 .product-card,
 .contact-card,
@@ -356,6 +360,134 @@ img {
     margin-top: 1rem;
     font-weight: 700;
     color: var(--color-cacao);
+}
+
+.highlight-list {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.highlight-list__title {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--color-forest);
+    text-align: center;
+}
+
+.highlight-list__detail {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.info-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 18px 42px rgba(59, 31, 22, 0.08);
+    text-align: center;
+}
+
+.info-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: var(--color-cacao);
+    margin-bottom: 0.8rem;
+}
+
+.info-card p {
+    text-align: justify;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.catalog-grid--wide {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.catalog-item {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 16px 36px rgba(59, 31, 22, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.catalog-item__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.catalog-item__header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.45rem;
+    color: var(--color-forest);
+    text-align: left;
+}
+
+.catalog-item__price {
+    font-weight: 700;
+    color: var(--color-caramel);
+    font-size: 1.2rem;
+}
+
+.catalog-item__details {
+    list-style: none;
+    display: grid;
+    gap: 0.4rem;
+    font-size: 0.98rem;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-item__note {
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: justify;
+    color: var(--color-cacao);
+}
+
+.catalog-info {
+    display: grid;
+    gap: 2rem;
+}
+
+.catalog-info__block {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 14px 32px rgba(59, 31, 22, 0.08);
+    text-align: center;
+}
+
+.catalog-info__block h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.catalog-info__block p {
+    text-align: justify;
 }
 
 .product-grid--two {
