@@ -1,244 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChocoValle | Sabores vivos de La Mana</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* === Ajustes solicitados === */
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ChocoValle | Sabores vivos de La Maná</title>
 
-        /* 1) “Bombones y tabletas listas…”: alineado a la izquierda + párrafos justificados */
-        .home-focus .content-section__text { text-align: left; }
-        .home-focus .content-section__text p {
-            text-align: justify;
-            text-justify: inter-word;
-            hyphens: auto;
-        }
-        .highlight-list__title,
-        .highlight-list__detail { display: block; text-align: left; }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        /* 2) Colecciones principales: cuadrícula más grande, aire y texto simétrico */
-        .category-grid{
-            display: grid;
-            grid-template-columns: repeat(2, minmax(260px, 1fr));
-            gap: 2rem;
-            align-items: stretch;
-            justify-items: stretch;
-        }
-        .product-card{
-            border-radius: 14px;
-            padding: 1.25rem 1.5rem;
-            box-shadow: 0 8px 24px rgba(0,0,0,.08);
-            background: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            text-align: left;
-        }
-        .product-card h3{ margin: 0 0 .5rem; }
-        .product-card p{
-            margin: 0 0 .75rem;
-            text-align: justify;
-            hyphens: auto;
-        }
-        .product-card__detail{
-            display: block;
-            margin-top: auto;
-            opacity: .85;
-        }
-
-        /* Desktop: cuadrícula 2x2 centrada y cards cuadradas */
-        @media (min-width: 900px){
-            .category-grid{
-                grid-template-columns: repeat(2, minmax(320px, 1fr));
-                max-width: 960px;
-                margin-inline: auto;
-            }
-            .product-card{ aspect-ratio: 1 / 1; }
-        }
-
-        /* 3) “Coordina tu pedido”: más espacio arriba */
-        .content-section--accent .link-cta{
-            display: inline-block;
-            margin-top: 1.75rem;
-        }
-
-        /* 4) Más respiración entre secciones */
-        .content-section{ padding-block: 3.5rem; }
-        .content-section + .content-section{ margin-top: 1rem; }
-
-        /* 5) Footer: separación simétrica */
-        .footer{
-            padding: 3rem 1rem;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-        }
-        @media (min-width: 900px){
-            .footer{
-                grid-template-columns: 1.2fr 1fr 1fr;
-                align-items: start;
-                gap: 2rem;
-            }
-        }
-        .footer__note{
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid rgba(0,0,0,.12);
-            text-align: center;
-        }
-    </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header class="hero hero--home">
-        <nav class="nav">
-            <a class="logo" href="index.html">ChocoValle</a>
-            <button class="nav__toggle" aria-expanded="false" aria-label="Abrir menú">☰</button>
-            <ul class="nav__links">
-                <li><a class="active" href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotras</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contáctanos</a></li>
-            </ul>
-        </nav>
-        <div class="hero__content">
-            <h1>Chocolate que honra la tierra</h1>
-            <p>Desde La Mana compartimos chocolate de origen elaborado por mujeres que tejen comunidad y cuidan el bosque.</p>
-            <div class="hero__actions">
-                <a class="button" href="productos.html">Explora nuestras presentaciones</a>
-                <a class="button button--light" href="nosotros.html">Conoce a la colectiva</a>
-            </div>
+  <header class="hero hero--home">
+    <div class="container">
+      <nav class="nav">
+        <a class="logo" href="index.html">ChocoValle</a>
+        <button class="nav__toggle" aria-expanded="false" aria-label="Abrir menú">☰</button>
+        <ul class="nav__links">
+          <li><a class="active" href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotras</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero__content stack-lg">
+        <h1>Chocolate que honra la tierra</h1>
+        <p>Desde La Maná compartimos chocolate de origen elaborado por mujeres que tejen comunidad y cuidan el bosque.</p>
+        <div class="hero__actions">
+          <a class="button" href="productos.html">Explora nuestras presentaciones</a>
+          <a class="button button--light" href="nosotros.html">Conoce a la colectiva</a>
         </div>
-    </header>
+      </div>
+    </div>
+    <div class="hero__bg media-card media-card--cacao" aria-hidden="true"></div>
+  </header>
 
-    <main>
-        <section class="content-section content-section--balanced home-focus">
-            <div class="content-section__text">
-                <h2>Bombones y tabletas listas para tus clientes</h2>
-                <p>Elaboramos cada pedido con cacao fino de aroma y rellenos de frutas tropicales. Entregamos cajas listas para vitrina, perfectas para boutiques, regalos empresariales o celebraciones familiares.</p>
-                <ul class="highlight-list">
-                    <li>
-                        <span class="highlight-list__title">Bombón relleno x14 und.</span>
-                        <span class="highlight-list__detail">Maracuyá, frutos rojos y piña &mdash; $6.00</span>
-                    </li>
-                    <li>
-                        <span class="highlight-list__title">Tableta 75% cacao (nuevo)</span>
-                        <span class="highlight-list__detail">Endulzada con panela, sabores piña, maracuyá, mango o canela &mdash; $2.25</span>
-                    </li>
-                    <li>
-                        <span class="highlight-list__title">Caja mixta 30 bombones</span>
-                        <span class="highlight-list__detail">15 rellenos 59% cacao + 15 DUO con maní &mdash; $15.00</span>
-                    </li>
-                </ul>
-                <a class="link-cta" href="productos.html">Ver catálogo completo</a>
-            </div>
-            <div class="content-section__media" aria-hidden="true">
-                <div class="media-card media-card--cacao"></div>
-            </div>
-        </section>
+  <main>
+    <!-- BLOQUE 1 -->
+    <section class="content-section home-focus">
+      <div class="container grid-2 balanced">
+        <div class="stack-md">
+          <h2>Bombones y tabletas listas para tus clientes</h2>
+          <p class="justified">Elaboramos cada pedido con cacao fino de aroma y rellenos de frutas tropicales. Entregamos cajas listas para vitrina, perfectas para boutiques, regalos empresariales o celebraciones familiares.</p>
 
-        <section class="content-section">
-            <div class="content-section__wrapper">
-                <h2>Colecciones principales</h2>
-                <div class="product-grid category-grid">
-                    <article class="product-card">
-                        <h3>Bombones artesanales</h3>
-                        <p>Cajas desde 5 hasta 60 unidades con rellenos frutales, caramelo salado y nuevas combinaciones DUO con maní.</p>
-                        <span class="product-card__detail">Disponibles en formato regular y mixto.</span>
-                    </article>
-                    <article class="product-card">
-                        <h3>Tabletas y pastas</h3>
-                        <p>Chocolate 100%, 75% y 45% cacao con sabores tropicales y frutos secos para venta al detal.</p>
-                        <span class="product-card__detail">Piezas de 25 g a 100 g.</span>
-                    </article>
-                    <article class="product-card">
-                        <h3>Bombones pequeños</h3>
-                        <p>Opciones para recuerdos y regalos personales: fundas de macizos, rellenos y combinaciones especiales.</p>
-                        <span class="product-card__detail">Listos para obsequios rápidos.</span>
-                    </article>
-                    <article class="product-card">
-                        <h3>Cajas de regalo</h3>
-                        <p>Presentaciones corazón, rectangular y cesta con selección curada de productos ChocoValle.</p>
-                        <span class="product-card__detail">Pedidos mayores a 6 unidades con 72h de anticipación.</span>
-                    </article>
-                </div>
-            </div>
-        </section>
+          <ul class="highlight-list">
+            <li>
+              <span class="highlight-list__title">Bombón relleno x14 und.</span>
+              <span class="highlight-list__detail">Maracuyá, frutos rojos y piña — $6.00</span>
+            </li>
+            <li>
+              <span class="highlight-list__title">Tableta 75% cacao (nuevo)</span>
+              <span class="highlight-list__detail">Endulzada con panela — sabores piña, maracuyá, mango o canela — $2.25</span>
+            </li>
+            <li>
+              <span class="highlight-list__title">Caja mixta 30 bombones</span>
+              <span class="highlight-list__detail">15 rellenos 59% + 15 DUO con maní — $15.00</span>
+            </li>
+          </ul>
 
-        <section class="content-section content-section--accent">
-            <div class="content-section__wrapper">
-                <h2>Pedidos y envíos</h2>
-                <div class="info-grid">
-                    <article class="info-card">
-                        <h3>Anticipación</h3>
-                        <p>Para cajas de regalo o pedidos mayores a 6 unidades solicitamos 72 horas para templado, empaque y control de calidad.</p>
-                    </article>
-                    <article class="info-card">
-                        <h3>Envíos</h3>
-                        <p>Realizamos envíos a nivel nacional en Ecuador con embalaje térmico y seguimiento por WhatsApp.</p>
-                    </article>
-                    <article class="info-card">
-                        <h3>Contacto inmediato</h3>
-                        <p>Haz tu pedido por WhatsApp al <strong>099 087 5632</strong> o <strong>099 401 0773</strong>, o escríbenos a <strong>lamontanita.aso@gmail.com</strong>.</p>
-                    </article>
-                </div>
-                <a class="link-cta" href="contacto.html">Coordina tu pedido</a>
-            </div>
-        </section>
-
-        <section class="content-section content-section--highlight">
-            <div class="content-section__text">
-                <h2>Chocolate hecho por 18 artesanas</h2>
-                <p>La Asociación de Producción Alimenticia Mujeres La Montañita &mdash; ASOLAMON transforma el cacao cultivado en las riberas del Río Calope en chocolate de alto valor. Cada socia participa en selección, fermentación, secado y moldeado.</p>
-                <p>Compartimos nuestra historia para que conozcas el trabajo que sostiene cada tableta y cada bombón.</p>
-                <a class="link-cta" href="nosotros.html">Conoce a la colectiva</a>
-            </div>
-            <div class="content-section__media" aria-hidden="true">
-                <div class="media-card media-card--history"></div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer__brand">
-            <a class="logo" href="index.html">ChocoValle</a>
-            <p>Chocolate artesanal creado por mujeres de La Mana, Cotopaxi.</p>
+          <a class="link-cta" href="productos.html">Ver catálogo completo</a>
         </div>
-        <div>
-            <h2>Síguenos</h2>
-            <ul class="footer__social">
-                <li><a href="https://www.instagram.com/Chocovalle.ecuador" target="_blank" rel="noreferrer">Instagram @Chocovalle.ecuador</a></li>
-                <li><a href="https://www.facebook.com/Chocovalle.ecuador" target="_blank" rel="noreferrer">Facebook @Chocovalle.ecuador</a></li>
-            </ul>
-        </div>
-        <div>
-            <h2>Contacto directo</h2>
-            <p><strong>Correo:</strong> lamontanita.aso@gmail.com</p>
-            <p><strong>WhatsApp:</strong> 099 087 5632 / 099 401 0773</p>
-        </div>
-        <p class="footer__note">Chocolate que honra la tierra y a las mujeres que la cultivan — <span class="footer__signature">LS Studios</span></p>
-    </footer>
 
-    <script>
-        const toggle = document.querySelector('.nav__toggle');
-        const navLinks = document.querySelector('.nav__links');
-        if (toggle && navLinks) {
-            toggle.addEventListener('click', () => {
-                const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-                toggle.setAttribute('aria-expanded', String(!isExpanded));
-                navLinks.classList.toggle('nav__links--open');
-            });
-            navLinks.querySelectorAll('a').forEach((link) => {
-                link.addEventListener('click', () => {
-                    toggle.setAttribute('aria-expanded', 'false');
-                    navLinks.classList.remove('nav__links--open');
-                });
-            });
-        }
-    </script>
+        <div class="content-section__media" aria-hidden="true">
+          <div class="media-card media-card--photo"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOQUE 2 -->
+    <section class="content-section content-section--soft">
+      <div class="container stack-md">
+        <h2>Colecciones principales</h2>
+
+        <div class="category-grid">
+          <article class="product-card stack-sm">
+            <h3>Bombones artesanales</h3>
+            <p class="justified">Cajas desde 5 hasta 60 unidades con rellenos frutales, caramelo salado y nuevas combinaciones DUO con maní.</p>
+            <span class="product-card__detail">Formato regular y mixto.</span>
+          </article>
+
+          <article class="product-card stack-sm">
+            <h3>Tabletas y pastas</h3>
+            <p class="justified">Chocolate 100%, 75% y 45% cacao con sabores tropicales y frutos secos para venta al detal.</p>
+            <span class="product-card__detail">Piezas de 25 g a 100 g.</span>
+          </article>
+
+          <article class="product-card stack-sm">
+            <h3>Bombones pequeños</h3>
+            <p class="justified">Opciones para recuerdos y regalos personales: fundas de macizos, rellenos y combinaciones especiales.</p>
+            <span class="product-card__detail">Listos para obsequios.</span>
+          </article>
+
+          <article class="product-card stack-sm">
+            <h3>Cajas de regalo</h3>
+            <p class="justified">Presentaciones corazón, rectangular y cesta con selección curada de productos ChocoValle.</p>
+            <span class="product-card__detail">Pedidos +6 unidades: 72 h.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOQUE 3 -->
+    <section class="content-section content-section--accent">
+      <div class="container stack-md">
+        <h2>Pedidos y envíos</h2>
+
+        <div class="info-grid">
+          <article class="info-card stack-xs">
+            <h3>Anticipación</h3>
+            <p>Para cajas de regalo o pedidos mayores a 6 unidades solicitamos 72 horas para templado, empaque y control de calidad.</p>
+          </article>
+
+        <article class="info-card stack-xs">
+            <h3>Envíos</h3>
+            <p>Realizamos envíos a nivel nacional en Ecuador con embalaje térmico y seguimiento por WhatsApp.</p>
+          </article>
+
+          <article class="info-card stack-xs">
+            <h3>Contacto inmediato</h3>
+            <p>Haz tu pedido por WhatsApp al <strong>099 087 5632</strong> o <strong>099 401 0773</strong>, o escríbenos a <strong>lamontanita.aso@gmail.com</strong>.</p>
+          </article>
+        </div>
+
+        <a class="link-cta push-down" href="contacto.html">Coordina tu pedido</a>
+      </div>
+    </section>
+
+    <!-- BLOQUE 4 -->
+    <section class="content-section content-section--highlight">
+      <div class="container grid-2 balanced">
+        <div class="stack-md">
+          <h2>Chocolate hecho por 18 artesanas</h2>
+          <p>La Asociación de Producción Alimenticia Mujeres La Montañita — ASOLAMON transforma el cacao cultivado en las riberas del Río Calope en chocolate de alto valor. Cada socia participa en selección, fermentación, secado y moldeado.</p>
+          <p>Compartimos nuestra historia para que conozcas el trabajo que sostiene cada tableta y cada bombón.</p>
+          <a class="link-cta" href="nosotros.html">Conoce a la colectiva</a>
+        </div>
+        <div class="content-section__media" aria-hidden="true">
+          <div class="media-card media-card--history"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand stack-xs">
+        <a class="logo" href="index.html">ChocoValle</a>
+        <p>Chocolate artesanal creado por mujeres de La Maná, Cotopaxi.</p>
+      </div>
+
+      <div class="stack-xs">
+        <h2 class="footer__title">Síguenos</h2>
+        <ul class="footer__social">
+          <li><a href="https://www.instagram.com/Chocovalle.ecuador" target="_blank" rel="noreferrer">Instagram @Chocovalle.ecuador</a></li>
+          <li><a href="https://www.facebook.com/Chocovalle.ecuador" target="_blank" rel="noreferrer">Facebook @Chocovalle.ecuador</a></li>
+        </ul>
+      </div>
+
+      <div class="stack-xs">
+        <h2 class="footer__title">Contacto directo</h2>
+        <p><strong>Correo:</strong> lamontanita.aso@gmail.com</p>
+        <p><strong>WhatsApp:</strong> 099 087 5632 / 099 401 0773</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="footer__note">Chocolate que honra la tierra y a las mujeres que la cultivan — <span class="footer__signature">LS Studios</span></p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav__toggle');
+    const navLinks = document.querySelector('.nav__links');
+    if (toggle && navLinks) {
+      toggle.addEventListener('click', () => {
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!isExpanded));
+        navLinks.classList.toggle('nav__links--open');
+      });
+      navLinks.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          toggle.setAttribute('aria-expanded', 'false');
+          navLinks.classList.remove('nav__links--open');
+        });
+      });
+    }
+  </script>
 </body>
 </html>
