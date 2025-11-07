@@ -329,16 +329,18 @@ img {
     margin-top: 3rem;
     gap: 2.5rem;
     justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .category-grid .product-card {
-    max-width: 320px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 0.75rem;
-    padding: 2.6rem 2.4rem;
+    gap: 1rem;
+    padding: 2.8rem 3rem;
+    background-color: #fff;
 }
 
 .category-grid .product-card p {
@@ -347,7 +349,7 @@ img {
 
 .category-grid .product-card__detail {
     text-align: center;
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
     color: rgba(47, 31, 26, 0.75);
 }
 
