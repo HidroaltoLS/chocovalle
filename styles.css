@@ -458,6 +458,10 @@ img {
     margin-top: 2.5rem;
 }
 
+.content-section--accent .link-cta {
+    margin: 2.5rem auto 0;
+}
+
 .info-card {
     background-color: #fff;
     padding: 2rem;
