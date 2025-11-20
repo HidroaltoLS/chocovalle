@@ -61,11 +61,11 @@ img {
 .logo {
     display: inline-flex;
     align-items: center;
-    height: 52px;
+    height: 156px;
 }
 
 .logo img {
-    height: 52px;
+    height: 156px;
     width: auto;
     display: block;
 }
@@ -733,6 +733,8 @@ img {
     font-family: var(--font-heading);
     letter-spacing: 0.08em;
     text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
 }
 
 @media (max-width: 900px) {
