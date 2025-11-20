@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Lora:wght@400;600;700&display=swap');
+
 :root {
     --color-chocolate: #733d29;
     --color-cacao: #d9b89c;
@@ -6,8 +8,8 @@
     --color-forest: #733d29;
     --color-background: #ffffff;
     --color-text: #3b241a;
-    --font-heading: 'Filson Pro', 'FilsonPro', 'Filson Pro Bold', 'Arial Rounded MT Bold', sans-serif;
-    --font-body: 'Stymie', 'Stymie BT', 'Times New Roman', serif;
+    --font-heading: 'Quicksand', 'Avenir', 'Nunito', system-ui, sans-serif;
+    --font-body: 'Lora', 'Georgia', 'Times New Roman', serif;
 }
 
 * {
