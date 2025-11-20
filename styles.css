@@ -1,11 +1,11 @@
 :root {
-    --color-chocolate: #3b1f16;
-    --color-cacao: #5c2f1b;
-    --color-caramel: #b8804b;
-    --color-cream: #f8f0e5;
-    --color-forest: #30543c;
-    --color-background: #fffaf5;
-    --color-text: #2d1a15;
+    --color-chocolate: #733d29;
+    --color-cacao: #d9b89c;
+    --color-caramel: #f2c166;
+    --color-cream: #f2d6a2;
+    --color-forest: #733d29;
+    --color-background: #ffffff;
+    --color-text: #3b241a;
     --font-heading: 'Cormorant Garamond', serif;
     --font-body: 'Mulish', sans-serif;
 }
@@ -22,6 +22,8 @@ body {
     background-color: var(--color-background);
     line-height: 1.7;
     min-height: 100vh;
+    background-image: radial-gradient(circle at 20% 20%, rgba(242, 198, 102, 0.08), transparent 30%),
+        radial-gradient(circle at 80% 0%, rgba(217, 184, 156, 0.08), transparent 28%);
 }
 
 a {
@@ -113,7 +115,7 @@ img {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(33, 17, 12, 0.75), rgba(33, 17, 12, 0.55));
+    background: linear-gradient(180deg, rgba(115, 61, 41, 0.82), rgba(115, 61, 41, 0.62));
     z-index: 0;
 }
 
@@ -161,6 +163,7 @@ img {
     font-size: clamp(2.5rem, 5vw, 4rem);
     letter-spacing: 0.04em;
     margin-bottom: 1rem;
+    color: #fff;
 }
 
 .hero__content p {
@@ -181,23 +184,26 @@ img {
     display: inline-block;
     padding: 0.9rem 1.9rem;
     border-radius: 999px;
-    background-color: var(--color-cream);
+    background-color: var(--color-caramel);
     color: var(--color-chocolate);
     font-weight: 700;
     letter-spacing: 0.05em;
-    transition: transform 0.25s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.25s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 12px 28px rgba(115, 61, 41, 0.18);
 }
 
 .button:hover,
 .button:focus-visible {
     transform: translateY(-2px);
-    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 16px 36px rgba(115, 61, 41, 0.2);
+    color: #3b241a;
 }
 
 .button--light {
     background-color: transparent;
     border: 2px solid var(--color-cream);
     color: var(--color-cream);
+    box-shadow: none;
 }
 
 .content-section {
@@ -270,7 +276,7 @@ img {
 .link-cta {
     font-weight: 700;
     letter-spacing: 0.04em;
-    color: var(--color-cacao);
+    color: var(--color-chocolate);
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
@@ -360,7 +366,8 @@ img {
     background-color: #fff;
     padding: 2.2rem;
     border-radius: 1.5rem;
-    box-shadow: 0 18px 42px rgba(59, 31, 22, 0.12);
+    border: 1px solid rgba(217, 184, 156, 0.65);
+    box-shadow: 0 18px 42px rgba(115, 61, 41, 0.08);
 }
 
 .feature-card h3,
@@ -436,7 +443,8 @@ img {
     background-color: #fff;
     padding: 2rem;
     border-radius: 1.5rem;
-    box-shadow: 0 18px 42px rgba(59, 31, 22, 0.08);
+    border: 1px solid rgba(217, 184, 156, 0.65);
+    box-shadow: 0 18px 42px rgba(115, 61, 41, 0.08);
     text-align: center;
 }
 
@@ -466,7 +474,8 @@ img {
     background-color: #fff;
     padding: 2rem;
     border-radius: 1.5rem;
-    box-shadow: 0 16px 36px rgba(59, 31, 22, 0.1);
+    border: 1px solid rgba(217, 184, 156, 0.65);
+    box-shadow: 0 16px 36px rgba(115, 61, 41, 0.08);
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -476,12 +485,12 @@ img {
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 1rem;
-    background: linear-gradient(135deg, rgba(119, 71, 52, 0.18), rgba(216, 161, 95, 0.22));
-    border: 1px dashed rgba(119, 71, 52, 0.35);
+    background: linear-gradient(135deg, rgba(242, 193, 102, 0.25), rgba(217, 184, 156, 0.3));
+    border: 1px dashed rgba(115, 61, 41, 0.38);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(119, 71, 52, 0.65);
+    color: rgba(115, 61, 41, 0.7);
     font-family: var(--font-heading);
     font-size: 1.1rem;
     letter-spacing: 0.04em;
@@ -609,7 +618,7 @@ img {
 .contact-form textarea {
     padding: 0.9rem 1rem;
     border-radius: 0.8rem;
-    border: 1px solid rgba(59, 31, 22, 0.2);
+    border: 1px solid rgba(115, 61, 41, 0.2);
     font-family: inherit;
     font-size: 1rem;
     background-color: #fff;
@@ -620,7 +629,7 @@ img {
 .contact-form textarea:focus {
     outline: none;
     border-color: var(--color-caramel);
-    box-shadow: 0 0 0 3px rgba(184, 128, 75, 0.2);
+    box-shadow: 0 0 0 3px rgba(242, 193, 102, 0.3);
 }
 
 .contact-list {
@@ -633,7 +642,7 @@ img {
 .cta {
     padding: clamp(4rem, 8vw, 6rem) 5vw;
     text-align: center;
-    background: linear-gradient(135deg, rgba(59, 31, 22, 0.92), rgba(48, 84, 60, 0.85));
+    background: linear-gradient(135deg, rgba(115, 61, 41, 0.94), rgba(242, 193, 102, 0.92));
     color: #fff;
 }
 
