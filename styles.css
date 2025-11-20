@@ -6,8 +6,8 @@
     --color-forest: #733d29;
     --color-background: #ffffff;
     --color-text: #3b241a;
-    --font-heading: 'Cormorant Garamond', serif;
-    --font-body: 'Mulish', sans-serif;
+    --font-heading: 'Filson Pro', 'FilsonPro', 'Filson Pro Bold', 'Arial Rounded MT Bold', sans-serif;
+    --font-body: 'Stymie', 'Stymie BT', 'Times New Roman', serif;
 }
 
 * {
@@ -24,6 +24,15 @@ body {
     min-height: 100vh;
     background-image: radial-gradient(circle at 20% 20%, rgba(242, 198, 102, 0.08), transparent 30%),
         radial-gradient(circle at 80% 0%, rgba(217, 184, 156, 0.08), transparent 28%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
 }
 
 a {
@@ -50,17 +59,22 @@ img {
 }
 
 .logo {
-    font-family: var(--font-heading);
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    height: 52px;
+}
+
+.logo img {
+    height: 52px;
+    width: auto;
+    display: block;
 }
 
 .nav__links {
     display: flex;
     list-style: none;
     gap: 1.5rem;
+    font-family: var(--font-heading);
     font-weight: 600;
     letter-spacing: 0.04em;
     color: #fff;
@@ -186,6 +200,7 @@ img {
     border-radius: 999px;
     background-color: var(--color-caramel);
     color: var(--color-chocolate);
+    font-family: var(--font-heading);
     font-weight: 700;
     letter-spacing: 0.05em;
     transition: transform 0.25s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
@@ -274,6 +289,7 @@ img {
 }
 
 .link-cta {
+    font-family: var(--font-heading);
     font-weight: 700;
     letter-spacing: 0.04em;
     color: var(--color-chocolate);
