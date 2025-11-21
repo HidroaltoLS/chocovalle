@@ -121,17 +121,17 @@ img {
     color: #fff;
     cursor: pointer;
     position: relative;
-    z-index: 12050;
+    z-index: 14050;
 }
 
 .nav-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(26, 16, 12, 0.55);
+    background: rgba(26, 16, 12, 0.7);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
-    z-index: 11980;
+    z-index: 13990;
     pointer-events: none;
 }
 
@@ -1087,7 +1087,7 @@ img {
         opacity: 0;
         visibility: hidden;
         transition: transform 0.35s ease, opacity 0.35s ease;
-        z-index: 11990;
+        z-index: 14000;
         box-shadow: 0 12px 30px rgba(19, 9, 6, 0.35);
         pointer-events: none;
     }
