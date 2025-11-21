@@ -60,7 +60,7 @@ img {
 
 .nav {
     position: relative;
-    z-index: 12000;
+    z-index: 20000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,23 +121,37 @@ img {
     color: #fff;
     cursor: pointer;
     position: relative;
-    z-index: 14050;
+    z-index: 20500;
 }
 
 .nav-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(26, 16, 12, 0.7);
+    background: rgba(26, 16, 12, 0.85);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
-    z-index: 13990;
+    z-index: 19990;
     pointer-events: none;
 }
 
 .nav-overlay--visible {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
+}
+
+.nav-open .hero,
+.nav-open main,
+.nav-open footer,
+.nav-open .social-widget {
+    pointer-events: none;
+}
+
+.nav-open .nav,
+.nav-open .nav__links,
+.nav-open .nav-overlay,
+.nav-open .nav__toggle {
     pointer-events: auto;
 }
 
@@ -1087,7 +1101,7 @@ img {
         opacity: 0;
         visibility: hidden;
         transition: transform 0.35s ease, opacity 0.35s ease;
-        z-index: 14000;
+        z-index: 20100;
         box-shadow: 0 12px 30px rgba(19, 9, 6, 0.35);
         pointer-events: none;
     }
