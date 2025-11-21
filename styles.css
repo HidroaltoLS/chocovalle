@@ -759,6 +759,17 @@ img {
     font-style: normal;
 }
 
+.footer__signature-link {
+    color: inherit;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer__signature-link:hover,
+.footer__signature-link:focus-visible {
+    text-decoration: underline;
+}
+
 .social-widget {
     position: fixed;
     top: 50%;
