@@ -147,15 +147,15 @@ img {
 }
 
 .hero--nosotras {
-    background-image: url('https://res.cloudinary.com/ds2scyclq/image/upload/v1763745612/WhatsApp_Image_2025-11-21_at_12.19.27_wpgqlq.jpg');
+    background-image: url('https://images.unsplash.com/photo-1523374228107-6e44bd2b524e?auto=format&fit=crop&w=1600&q=80');
 }
 
 .hero--productos {
-    background-image: url('https://res.cloudinary.com/ds2scyclq/image/upload/v1763669574/DSC00603_q9yogs.jpg');
+    background-image: url('https://images.unsplash.com/photo-1606318310857-47d839d70c3f?auto=format&fit=crop&w=1600&q=80');
 }
 
 .hero--contacto {
-    background-image: url('https://res.cloudinary.com/ds2scyclq/image/upload/v1763669571/DSC00596_mwksh7.jpg');
+    background-image: url('https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1600&q=80');
 }
 
 .hero--sub {
@@ -836,6 +836,19 @@ img {
 }
 
 @media (max-width: 640px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .nav {
+        padding: 1rem 4vw;
+    }
+
+    .logo,
+    .logo img {
+        height: 96px;
+    }
+
     .social-widget {
         right: 0.25rem;
         transform: translate(70%, -50%);
@@ -844,6 +857,65 @@ img {
     .social-widget__link {
         width: 3.1rem;
         height: 3.1rem;
+    }
+
+    .hero {
+        min-height: 92vh;
+    }
+
+    .hero__content {
+        max-width: 34rem;
+        padding: 3.25rem 6vw 4.25rem;
+        text-align: left;
+        align-items: flex-start;
+        gap: 0.35rem;
+    }
+
+    .hero__content h1 {
+        font-size: clamp(2.1rem, 8vw, 2.8rem);
+        line-height: 1.05;
+    }
+
+    .hero__content p {
+        font-size: 1rem;
+        max-width: 32rem;
+    }
+
+    .hero__actions {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 0.75rem;
+    }
+
+    .hero__actions .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content-section {
+        padding: 3.25rem 5vw;
+    }
+
+    .content-section__text h2,
+    .content-section__wrapper h2 {
+        text-align: left;
+    }
+
+    .content-section__text p,
+    .content-section__wrapper p {
+        text-align: left;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .product-card,
+    .feature-card,
+    .contact-card,
+    .contact-form {
+        padding: 1.8rem;
     }
 }
 
