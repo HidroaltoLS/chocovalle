@@ -780,8 +780,8 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 3rem;
-    height: 3rem;
+    width: 3.6rem;
+    height: 3.6rem;
     border-radius: 999px;
     background: linear-gradient(135deg, rgba(242, 193, 102, 0.95), rgba(217, 184, 156, 0.95));
     color: #3b241a;
@@ -798,8 +798,8 @@ img {
 }
 
 .social-widget__icon {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.6rem;
+    height: 1.6rem;
 }
 
 @media (max-width: 640px) {
@@ -809,8 +809,8 @@ img {
     }
 
     .social-widget__link {
-        width: 2.75rem;
-        height: 2.75rem;
+        width: 3.1rem;
+        height: 3.1rem;
     }
 }
 
