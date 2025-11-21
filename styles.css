@@ -60,7 +60,7 @@ img {
 
 .nav {
     position: relative;
-    z-index: 1200;
+    z-index: 12000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,7 +121,7 @@ img {
     color: #fff;
     cursor: pointer;
     position: relative;
-    z-index: 1300;
+    z-index: 12050;
 }
 
 .nav-overlay {
@@ -131,12 +131,14 @@ img {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
-    z-index: 1100;
+    z-index: 11980;
+    pointer-events: none;
 }
 
 .nav-overlay--visible {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
 }
 
 .hero {
@@ -1085,14 +1087,16 @@ img {
         opacity: 0;
         visibility: hidden;
         transition: transform 0.35s ease, opacity 0.35s ease;
-        z-index: 1250;
+        z-index: 11990;
         box-shadow: 0 12px 30px rgba(19, 9, 6, 0.35);
+        pointer-events: none;
     }
 
     .nav__links--open {
         transform: translateX(0);
         opacity: 1;
         visibility: visible;
+        pointer-events: auto;
     }
 
     .nav__links a {
