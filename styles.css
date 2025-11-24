@@ -185,15 +185,15 @@ img {
 }
 
 .hero--nosotras {
-    background-image: url('https://res.cloudinary.com/ds2scyclq/image/upload/v1763994431/WhatsApp_Image_2025-11-24_at_08.56.34_1_oahekd.jpg');
+    background-image: url('https://images.unsplash.com/photo-1523374228107-6e44bd2b524e?auto=format&fit=crop&w=1600&q=80');
 }
 
 .hero--productos {
-    background-image: url('https://res.cloudinary.com/ds2scyclq/image/upload/v1763745612/WhatsApp_Image_2025-11-21_at_12.19.27_wpgqlq.jpg');
+    background-image: url('https://images.unsplash.com/photo-1606318310857-47d839d70c3f?auto=format&fit=crop&w=1600&q=80');
 }
 
 .hero--contacto {
-    background-image: url('https://res.cloudinary.com/ds2scyclq/image/upload/v1763994431/WhatsApp_Image_2025-11-24_at_08.56.33_hkrt8e.jpg');
+    background-image: url('https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1600&q=80');
 }
 
 .hero--sub {
@@ -411,11 +411,15 @@ img {
 }
 
 .media-card--community {
-    background-image: url('https://images.unsplash.com/photo-1481390847377-14802b989b5a?auto=format&fit=crop&w=1200&q=80');
+    background-image: url('https://res.cloudinary.com/ds2scyclq/image/upload/v1763996122/WhatsApp_Image_2025-11-24_at_08.56.34_2_rytx77.jpg');
 }
 
 .media-card--history {
     background-image: url('https://res.cloudinary.com/ds2scyclq/image/upload/v1763669573/DSC00600_exeqz8.jpg');
+}
+
+.media-card--history-secondary {
+    background-image: url('https://res.cloudinary.com/ds2scyclq/image/upload/v1763669574/DSC00602_k0bkkm.jpg');
 }
 
 .media-card--products {
@@ -599,18 +603,28 @@ img {
     margin-top: 1.5rem;
 }
 
-.photo-placeholder {
+.photo-placeholder,
+.photo-card {
     aspect-ratio: 4 / 3;
     border-radius: 1rem;
+    box-shadow: var(--shadow-card);
+}
+
+.photo-placeholder {
     background: linear-gradient(135deg, rgba(242, 193, 102, 0.22), rgba(217, 184, 156, 0.3));
     border: 1px dashed rgba(115, 61, 41, 0.35);
-    box-shadow: var(--shadow-card);
     display: flex;
     align-items: center;
     justify-content: center;
     color: rgba(115, 61, 41, 0.82);
     font-weight: 700;
     letter-spacing: 0.06em;
+}
+
+.photo-card {
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(217, 184, 156, 0.65);
 }
 
 .catalog-grid {
