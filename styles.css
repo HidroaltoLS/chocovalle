@@ -568,12 +568,13 @@ img {
     border-radius: 1.5rem;
     border: 1px solid rgba(217, 184, 156, 0.65);
     box-shadow: var(--shadow-card);
-    padding: 2.2rem 2rem;
+    padding: 2.8rem 2.6rem 3.4rem;
     overflow: hidden;
 }
 
 .process-carousel__viewport {
     overflow: hidden;
+    padding-bottom: 0.6rem;
 }
 
 .process-carousel__track {
@@ -586,7 +587,7 @@ img {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
     padding: 0.5rem 0.25rem;
 }
 
@@ -647,22 +648,23 @@ img {
 }
 
 .process__control--prev {
-    left: 1rem;
+    left: -0.35rem;
 }
 
 .process__control--next {
-    right: 1rem;
+    right: -0.35rem;
 }
 
 .process__counter {
     position: absolute;
-    bottom: 1rem;
-    right: 1.4rem;
-    background: rgba(47, 31, 26, 0.08);
+    bottom: 1.6rem;
+    right: 1.6rem;
+    background: rgba(47, 31, 26, 0.12);
     color: #2f1f1a;
-    padding: 0.4rem 0.8rem;
+    padding: 0.48rem 0.96rem;
     border-radius: 999px;
     font-weight: 800;
+    box-shadow: 0 10px 30px rgba(47, 31, 26, 0.12);
 }
 
 .info-grid {
@@ -1110,7 +1112,7 @@ img {
     }
 
     .process-carousel {
-        padding: 1.8rem 1.4rem 2rem;
+        padding: 2rem 1.6rem 2.4rem;
     }
 
     .process-step {
@@ -1132,16 +1134,16 @@ img {
     }
 
     .process__control--prev {
-        left: 0.35rem;
+        left: 0.1rem;
     }
 
     .process__control--next {
-        right: 0.35rem;
+        right: 0.1rem;
     }
 
     .process__counter {
-        right: 1rem;
-        bottom: 0.6rem;
+        right: 1.1rem;
+        bottom: 0.9rem;
     }
 
     .hero {
