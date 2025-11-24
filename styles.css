@@ -383,6 +383,7 @@ img {
     gap: 1.2rem;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     margin-top: 1.6rem;
+    margin-bottom: 2.2rem;
 }
 
 .stat-card {
