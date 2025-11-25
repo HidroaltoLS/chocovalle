@@ -292,6 +292,7 @@
             const nextBtn = document.querySelector('.process__control--next');
             const counter = document.querySelector('.process__counter');
             let currentIndex = 0;
+            let autoInterval;
 
             const updateSlide = (index) => {
                 if (!processSlides.length) return;
@@ -302,10 +303,24 @@
                 }
             };
 
-            prevBtn?.addEventListener('click', () => updateSlide(currentIndex - 1));
-            nextBtn?.addEventListener('click', () => updateSlide(currentIndex + 1));
+            const restartAutoPlay = () => {
+                if (autoInterval) clearInterval(autoInterval);
+                autoInterval = setInterval(() => {
+                    updateSlide(currentIndex + 1);
+                }, 2000);
+            };
+
+            prevBtn?.addEventListener('click', () => {
+                updateSlide(currentIndex - 1);
+                restartAutoPlay();
+            });
+            nextBtn?.addEventListener('click', () => {
+                updateSlide(currentIndex + 1);
+                restartAutoPlay();
+            });
 
             updateSlide(0);
+            restartAutoPlay();
         }
     </script>
 </body>
