@@ -14,7 +14,6 @@
             <a class="logo" href="index.html">
                 <img src="https://res.cloudinary.com/ds2scyclq/image/upload/v1764017708/Chocovalle_blanco_iyp2s9.png" alt="ChocoValle">
             </a>
-            <button class="nav__toggle" aria-expanded="false" aria-label="Abrir menú" aria-controls="primary-menu">☰</button>
             <ul class="nav__links" id="primary-menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a class="active" href="nosotros.html">Nosotras</a></li>
@@ -22,7 +21,6 @@
                 <li><a href="contacto.html">Contáctanos</a></li>
             </ul>
         </nav>
-        <div class="nav-overlay" aria-hidden="true"></div>
         <div class="hero__content">
             <h1>Mujeres detrás del chocolate</h1>
             <p>Dieciocho artesanas transforman cacao de La Mana en tabletas y bombones con identidad y valor para sus familias.</p>
@@ -201,6 +199,13 @@
         </section>
     </main>
 
+    <nav class="bottom-nav" aria-label="Navegación principal en móvil">
+        <a class="bottom-nav__link" href="index.html">Inicio</a>
+        <a class="bottom-nav__link active" href="nosotros.html">Nosotras</a>
+        <a class="bottom-nav__link" href="productos.html">Productos</a>
+        <a class="bottom-nav__link" href="contacto.html">Contacto</a>
+    </nav>
+
     <div class="social-widget" aria-label="Redes y pedidos de ChocoValle">
         <a class="social-widget__link" href="https://wa.me/593990875632" target="_blank" rel="noreferrer" aria-label="WhatsApp">
             <svg class="social-widget__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -248,43 +253,6 @@
     </footer>
 
     <script>
-        const toggle = document.querySelector('.nav__toggle');
-        const navLinks = document.querySelector('.nav__links');
-        const navOverlay = document.querySelector('.nav-overlay');
-
-        const closeMenu = () => {
-            toggle?.setAttribute('aria-expanded', 'false');
-            navLinks?.classList.remove('nav__links--open');
-            navOverlay?.classList.remove('nav-overlay--visible');
-            document.body.classList.remove('nav-open');
-        };
-
-        const openMenu = () => {
-            toggle?.setAttribute('aria-expanded', 'true');
-            navLinks?.classList.add('nav__links--open');
-            navOverlay?.classList.add('nav-overlay--visible');
-            document.body.classList.add('nav-open');
-        };
-
-        if (toggle && navLinks && navOverlay) {
-            toggle.addEventListener('click', () => {
-                const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-                isExpanded ? closeMenu() : openMenu();
-            });
-
-            navOverlay.addEventListener('click', closeMenu);
-
-            navLinks.querySelectorAll('a').forEach((link) => {
-                link.addEventListener('click', closeMenu);
-            });
-
-            document.addEventListener('keyup', (event) => {
-                if (event.key === 'Escape') {
-                    closeMenu();
-                }
-            });
-        }
-
         const processTrack = document.querySelector('.process-carousel__track');
         if (processTrack) {
             const processSlides = Array.from(processTrack.children);
