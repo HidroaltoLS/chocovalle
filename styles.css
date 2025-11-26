@@ -60,7 +60,7 @@ img {
 
 .nav {
     position: relative;
-    z-index: 20000;
+    z-index: 100000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,17 +121,17 @@ img {
     color: #fff;
     cursor: pointer;
     position: relative;
-    z-index: 20500;
+    z-index: 100002;
 }
 
 .nav-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(26, 16, 12, 0.85);
+    background: rgba(26, 16, 12, 0.9);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
-    z-index: 19990;
+    z-index: 99998;
     pointer-events: none;
 }
 
@@ -139,6 +139,10 @@ img {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+}
+
+.nav-open {
+    overflow: hidden;
 }
 
 .nav-open .hero,
@@ -615,6 +619,7 @@ img {
 .process-step__media {
     width: 100%;
     aspect-ratio: 4 / 3;
+    max-height: 320px;
     border-radius: 1rem;
     background: linear-gradient(135deg, rgba(242, 193, 102, 0.55), rgba(115, 61, 41, 0.55));
     border: 1px solid rgba(217, 184, 156, 0.65);
@@ -1130,20 +1135,28 @@ img {
     }
 
     .process-carousel {
-        padding: 2.1rem 1.55rem 4.1rem;
+        padding: 1.75rem 1.35rem 3.4rem;
     }
 
     .process-step {
         grid-template-columns: 1fr;
-        gap: 1.35rem;
+        gap: 1rem;
     }
 
     .process-step__meta h3 {
         text-align: center;
+        font-size: 1.05rem;
     }
 
     .process-step__meta p {
         text-align: left;
+        font-size: 0.95rem;
+        line-height: 1.55;
+    }
+
+    .process-step__media {
+        max-height: 230px;
+        margin-inline: auto;
     }
 
     .process__control {
@@ -1371,7 +1384,7 @@ img {
         opacity: 0;
         visibility: hidden;
         transition: transform 0.35s ease, opacity 0.35s ease;
-        z-index: 20100;
+        z-index: 100001;
         box-shadow: 0 12px 30px rgba(19, 9, 6, 0.35);
         pointer-events: none;
     }
