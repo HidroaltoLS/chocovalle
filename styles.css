@@ -573,6 +573,8 @@ img {
     border: 1px solid rgba(217, 184, 156, 0.65);
     box-shadow: var(--shadow-card);
     padding: 2.8rem 2.6rem 3.8rem;
+    margin: 0 auto;
+    max-width: 960px;
     overflow: hidden;
 }
 
@@ -662,14 +664,16 @@ img {
 
 .process__counter {
     position: absolute;
-    bottom: 1.6rem;
-    right: 1.6rem;
+    left: 50%;
+    bottom: 1.1rem;
+    transform: translateX(-50%);
     background: rgba(47, 31, 26, 0.12);
     color: #2f1f1a;
-    padding: 0.48rem 0.96rem;
+    padding: 0.35rem 0.9rem;
     border-radius: 999px;
     font-weight: 800;
     box-shadow: 0 10px 30px rgba(47, 31, 26, 0.12);
+    font-size: 0.95rem;
 }
 
 .info-grid {
@@ -1180,7 +1184,9 @@ img {
     .process__counter {
         left: 50%;
         transform: translateX(-50%);
-        bottom: 1.05rem;
+        bottom: 0.95rem;
+        font-size: 0.88rem;
+        padding: 0.32rem 0.78rem;
     }
 
     .hero {
@@ -1314,7 +1320,9 @@ img {
     }
 
     .process__counter {
-        bottom: 0.85rem;
+        bottom: 0.7rem;
+        font-size: 0.82rem;
+        padding: 0.28rem 0.7rem;
     }
 
     .content-section {
