@@ -568,7 +568,7 @@ img {
     border-radius: 1.5rem;
     border: 1px solid rgba(217, 184, 156, 0.65);
     box-shadow: var(--shadow-card);
-    padding: 2.8rem 2.6rem 3.4rem;
+    padding: 2.8rem 2.6rem 3.8rem;
     overflow: hidden;
 }
 
@@ -1130,12 +1130,12 @@ img {
     }
 
     .process-carousel {
-        padding: 2rem 1.6rem 2.4rem;
+        padding: 2.1rem 1.55rem 4.1rem;
     }
 
     .process-step {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1.35rem;
     }
 
     .process-step__meta h3 {
@@ -1147,21 +1147,24 @@ img {
     }
 
     .process__control {
-        width: 2.6rem;
-        height: 2.6rem;
+        width: 2.65rem;
+        height: 2.65rem;
+        top: auto;
+        bottom: 1.65rem;
     }
 
     .process__control--prev {
-        left: 0.1rem;
+        left: 1.25rem;
     }
 
     .process__control--next {
-        right: 0.1rem;
+        right: 1.25rem;
     }
 
     .process__counter {
-        right: 1.1rem;
-        bottom: 0.9rem;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0.95rem;
     }
 
     .hero {
