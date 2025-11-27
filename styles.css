@@ -370,10 +370,18 @@ img {
 .media-stack {
     display: grid;
     gap: 1.2rem;
+    grid-template-columns: 1fr;
 }
 
 .media-stack .media-card {
     aspect-ratio: 4 / 3;
+}
+
+@media (min-width: 900px) {
+    .media-stack {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: stretch;
+    }
 }
 
 .stats-grid {
