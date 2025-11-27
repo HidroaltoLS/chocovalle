@@ -630,8 +630,8 @@ img {
     background: rgba(115, 61, 41, 0.9);
     color: #fff;
     border: none;
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 2.4rem;
+    height: 2.4rem;
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -647,11 +647,11 @@ img {
 }
 
 .process__control--prev {
-    left: -0.35rem;
+    left: -1.35rem;
 }
 
 .process__control--next {
-    right: -0.35rem;
+    right: -1.35rem;
 }
 
 .process__counter {
