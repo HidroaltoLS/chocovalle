@@ -569,7 +569,7 @@ img {
     margin: 0 auto;
     max-width: 1080px;
     width: min(96%, 1080px);
-    overflow: hidden;
+    overflow: visible;
 }
 
 .process-carousel__viewport {
@@ -647,11 +647,11 @@ img {
 }
 
 .process__control--prev {
-    left: -1.35rem;
+    left: -2.75rem;
 }
 
 .process__control--next {
-    right: -1.35rem;
+    right: -2.75rem;
 }
 
 .process__counter {
