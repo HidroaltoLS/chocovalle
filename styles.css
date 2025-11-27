@@ -1448,6 +1448,19 @@ img {
 }
 
 @media (max-width: 720px) {
+    p,
+    .content-section__text p,
+    .content-section__wrapper p,
+    .feature-card p,
+    .product-card p,
+    .info-card p,
+    .catalog-item__details,
+    .process-step__meta p,
+    .footer__brand p,
+    .footer__group p {
+        text-align: justify;
+    }
+
     .content-section--balanced,
     .content-section--highlight {
         grid-template-columns: 1fr;
